@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e -o pipefail
+
+ytimeq ()
+{
+	TIME="TimeQ: elapsed %E (ring3 %U, ring0 %S, CPU %P)." "$(which time)" "$@"
+}
+
+Main ()
+{
+	printf "Producing the documentation...\n{\n"
+	which asciidoctor && ytimeq asciidoctor -b html5 "README.adoc" -o "README.html" || true
+	printf "}\n\n"
+}
+
+Main "$@"

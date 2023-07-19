@@ -1,0 +1,71 @@
+= [2023-07-19] Modest Suggestion for a Learning Plan 01h
+:docinfo: shared
+:date:    2023-07-19
+:toc:     macro
+
+
+
+== Modest Suggestion for a Learning Plan -- Course on Machine Code (for the x86) and Modern C++
+
+[%autowidth]
+[cols="1,1"]
+|===
+|Section|Description
+
+|Hexadecimal
+|A wise author once said that "Computers count in sixteens [hexadecimal], not tens [decimal].".
+In truth, computers count in twos (binary), but the hexadecimal and the binary notations are almost equivalent
+and it is easier for humans accustomed only to the decimal notation to start by learning hexadecimal.
+Hexadecimal notation is used all over Computer Science.
+We are going to use it in order to write memory addresses, to write memory contents, to describe objects via object diagrams.
+
+|Memory and Registers
+|A view of how the computer memorizes information.
+
+|Machine Code Instructions
+|The basic set of operations: load, store, register transfer, arithmetic and logic operations, jumps and conditional jumps, subroutine calls.
+
+|C++ Fundamental Types
+|
+
+|C++ Instructions
+|
+
+|Translating between C++ and Machine Code
+|
+
+|Translating between Machine Code and C++
+|An overview of Reverse Engineering and of techniques used by toolchains to allow debugging.
+
+|Objects in C++
+|Four kinds of objects:
+
+* Concrete Objects;
+
+* Objects with Virtual Functions;
+
+* Resource Objects;
+
+* Thin Wrappers.
+
+It is useful to understand the differences between these extreme kinds.
+Then, when implementing objects of these kinds or of hybrid kinds, we are going to know the pluses and minuses.
+And we are going to have ready-to-use recipes -- a good starting point even when we do not remember by heart all the motivations.
+By repeatedly applying the recipes during our learning/work, we are going to absorb the motivations.
+
+|Compiler Techniques
+|We normally program in higher-level languages such as C++.
+All such code needs to be translated to Machine Code in order for the computer to understand it.
+The techniques used for such translation are widely useful for many other tasks.
+We wish to develop an overview of the challenges and applicability of Compiler Techniques.
+
+|Regular Expressions
+|Regular Expressions are descriptions of languages of a class called "Regular Languages".
+These are not very complex or very expressive, but they are applicable to a large subset of problems
+and are supported by most modern languages/environments. Regular Expressions also often appear in documentation.
+
+|Event-Based Programming, State-Based Programming, Async Programming, Concurrency
+|From now-familiar aspects (state-based programming, as encountered in Compiler Techniques) to Concurrency and its challenges,
+the way Concurrency fundamentally changes the way we compose correct software out of smaller pieces of correct software.
+
+|===
