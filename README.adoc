@@ -68,4 +68,7 @@ and are supported by most modern languages/environments. Regular Expressions als
 |From now-familiar aspects (state-based programming, as encountered in Compiler Techniques) to Concurrency and its challenges,
 the way Concurrency fundamentally changes the way we compose correct software out of smaller pieces of correct software.
 
+|Re-ordering
+|An overview of how toolchains and hardware re-order instructions (for better execution speed) and how this affects Concurrent Programming.
+
 |===
